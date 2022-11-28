@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"> 
+        <title>V-Objects</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- tensorflow-->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    </head>
+    <body>
+
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-lower"> <font face="Allura">make up your mind</font> </span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">V-Objects</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
+                    </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Acerca de</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <video class="intro-img img-fluid mb-3 mb-lg-0 rounded"  autoplay playsinline muted id="webcam" width="1500px" height="1000px"></video>
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">¿Qué objeto es?</span>
+                            <span class="section-heading-lower">Clasificación de imágenes</span>
+                        </h2>
+                        <p class="mb-3" id="resultados"></p>
+                        <div class="intro-button mx-auto"><a class="btn btn-danger btn-xl" href="#!" onclick="capturarImagen()">Captura Imagen</a></div>
+                        <div><a class="btn btn-dark btn-xl" href="#!" onclick="agregarImagen()">Guadar Imagen</a></div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Nuestra promesa</span>
+                            </h2>
+                            <p class="mb-0"> Estamos dedicados a brindarte un servicio amable.
+                                Si no está satisfecho, háganoslo saber y haremos todo lo posible para hacer las cosas bien.
+                               </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small fw-bold">V-Objects Corporation &copy; Copyright<br> </p>
+              <p style="font-size: 14px;">  <img  src="images/facebook1.png" alt="20" width="20"> 
+                <img  src="images/gorjeo1.png" alt="20" width="20">  <img  src="images/gmail1.png" alt="22" width="22"> 
+                <img  src="images/insta1.png" alt="20" width="20">   <img  src="images/whatsapp1.png" alt="20" width="20"> 
+                </p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>
